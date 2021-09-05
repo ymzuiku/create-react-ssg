@@ -39,8 +39,6 @@ export async function ssg() {
     fs.mkdirpSync(path.parse(real).dir);
   });
 
-  fs.writeFileSync(Cwd(`${distPath}/__tmp__.html`), template);
-
   for (const url of routesToPrerender) {
     const context = {};
     const appHtml = await render(parseURL(url), context);
