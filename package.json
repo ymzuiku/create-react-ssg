@@ -1,0 +1,67 @@
+{
+  "name": "create-react-ssx",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env node scripts/build.js",
+    "build": "cross-env NODE_ENV=production node scripts/build.js",
+    "test": "jest --watch",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "fastify": "^3.20.2",
+    "fs-extra": "^10.0.0",
+    "middie": "^5.3.0",
+    "node-fetch": "^2.6.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/fs-extra": "^9.0.12",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.1",
+    "@types/node-fetch": "^2.5.12",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.8",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "@vitejs/plugin-legacy": "^1.5.1",
+    "@vitejs/plugin-react-refresh": "^1.3.1",
+    "autoprefixer": "^10.3.3",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.12.24",
+    "esbuild-jest": "^0.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^7.0.2",
+    "jest": "^27.1.0",
+    "lint-staged": "^11.1.2",
+    "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
+    "tailwindcss": "^2.2.7",
+    "tslib": "^2.3.1",
+    "typescript": "^4.3.5",
+    "vite": "^2.4.4",
+    "vite-plugin-imagemin": "^0.4.5",
+    "vite-react-jsx": "^1.1.2"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "printWidth": 120,
+    "singleQuote": false,
+    "jsxBracketSameLine": true,
+    "useTabs": false
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.{tsx,ts}": "eslint --cache --fix"
+  }
+}
