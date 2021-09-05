@@ -1,13 +1,13 @@
 {
-  "name": "create-react-ssx",
-  "version": "1.1.0",
+  "name": "create-react-ssg",
+  "version": "0.1.0",
   "description": "",
   "main": "creator.js",
   "files": [
     "creator.js"
   ],
   "bin": {
-    "create-react-ssx": "creator.js"
+    "create-react-ssg": "creator.js"
   },
   "keywords": [],
   "author": "",

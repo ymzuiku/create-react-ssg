@@ -36,7 +36,7 @@ if (fs.existsSync(Cwd(dir))) {
 
 console.log("Target Project:", Cwd(dir));
 console.log("Creating...");
-const worker = spawn("git", ["clone", "--depth=1", "https://github.com/ymzuiku/create-react-ssx", dir], {
+const worker = spawn("git", ["clone", "--depth=1", "https://github.com/ymzuiku/create-react-ssg", dir], {
   // stdio: "inherit",
   env: process.env,
 });
