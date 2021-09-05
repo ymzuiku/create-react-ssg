@@ -1,6 +1,6 @@
 {
   "name": "create-react-ssg",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "creator.js",
   "files": [
@@ -8,6 +8,10 @@
   ],
   "bin": {
     "create-react-ssg": "creator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymzuiku/create-react-ssg.git"
   },
   "keywords": [],
   "author": "",

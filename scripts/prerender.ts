@@ -5,7 +5,7 @@ import { parseURL } from "./parsers";
 import { Cwd, loadPages } from "./loaders";
 import { render } from "../src/entry-server";
 
-const distPath = "dist/static";
+const distPath = "dist";
 const template = fs.readFileSync(Cwd(distPath + "/index.html"), "utf-8");
 
 const cacheRemove: Record<string, unknown> = {};

@@ -21,7 +21,7 @@
 创建工程:
 
 ```bash
-npx create-react-ssx my-project
+npx create-react-ssg my-project
 cd my-project
 npm install
 ```
@@ -41,6 +41,22 @@ npm install
 
 - 拷贝 dist/static 到静态服务器中
 
+
+## 在历史 create-react-ssg 项目中更新版本
+
+create-react-ssg 所有的逻辑都编写在 scripts 中，你可以从新的 create-react-ssg 拷贝 scripts 文件覆盖你当前工程的对应文件。有一个相关的命令帮忙做以上的事情：
+
+```bash
+# 在一个 create-react-ssg 工程中使用：
+create-react-ssg --update
+# 安装新依赖（若 package.json 有依赖变动）
+npm run install
+```
+
+`--update` 命令一共做了两件事情：
+
+1. 备份历史的 scripts 文件夹，并且下载新的 scripts 文件夹
+2. 更新 package.json 中和新 create-react-ssg 相关的依赖
 
 ## 已知问题
 

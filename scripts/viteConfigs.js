@@ -26,10 +26,8 @@ exports.server = (define) =>
         entry: serverIndex,
       },
       outDir: "dist/server-dev",
-      emptyOutDir: true,
-      watch: {
-        buildDelay: 30,
-      },
+      emptyOutDir: false,
+      watch: false,
     },
   });
 
@@ -119,6 +117,6 @@ exports.static = () =>
     logLevel: "info",
     build: {
       brotliSize: false,
-      outDir: "dist/static",
+      outDir: "dist",
     },
   });
