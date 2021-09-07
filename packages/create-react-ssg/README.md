@@ -11,8 +11,6 @@
 - 一切无聊的配置：eslint + prettier，jest + esbuild，tailwind-jit
 - pre-commit 配置：格式化 prettier，校验 eslint，单元测试，均通过后才可提交
 
-## FQA
-
 ## Getting Started
 
 ### CLI
@@ -32,7 +30,7 @@ npm install
 - npm run test : 启动测试
 
 
-## 在历史 create-react-ssg 项目中更新版本
+### 在历史 create-react-ssg 项目中更新版本
 
 create-react-ssg 所有的逻辑都编写在 scripts 中，你可以从新的 create-react-ssg 拷贝 scripts 文件覆盖你当前工程的对应文件。有一个相关的命令帮忙做以上的事情：
 
