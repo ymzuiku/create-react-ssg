@@ -35,12 +35,6 @@ npm install
 - npm run build:static : 前端预编译(SSG)
 - npm run server : 预览遍以后的服务
 
-## Deploy
-
-### 前端
-
-- 拷贝 dist/static 到静态服务器中
-
 
 ## 在历史 create-react-ssg 项目中更新版本
 
