@@ -8,8 +8,7 @@
 - 类似 Next 的约定路由: src/pages 下所有 \*.tsx 文件均为页面组件, 文件或文件夹名以 `_` 开头的除外
 - 自动懒加载 (开发环境不生效)
 - 支持 tailwind-jit
-- eslint + prettier
-- jest + esbuild
+- 一切无聊的配置：eslint + prettier，jest + esbuild，tailwind-jit
 - pre-commit 配置：格式化 prettier，校验 eslint，单元测试，均通过后才可提交
 
 ## FQA
@@ -29,11 +28,8 @@ npm install
 ### Script
 
 - npm run dev : 启动开发模式
-- npm run build:ssr : 编译生产 SSR
-- npm run build:ssg : 前端预编译(SSG) 并且拷贝静态资源到服务端
-- npm run build:server : 编译生产的纯后端
-- npm run build:static : 前端预编译(SSG)
-- npm run server : 预览遍以后的服务
+- npm run build : 编译生产 SSG
+- npm run test : 启动测试
 
 
 ## 在历史 create-react-ssg 项目中更新版本
