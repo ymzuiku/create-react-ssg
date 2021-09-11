@@ -48,4 +48,5 @@ npm run install
 
 ## 已知问题
 
-- 前端测试文件请勿放到 src/pages 中，这会导致 vite 的 import.meta.globEage 加载测试文件从而编译失败
+- 测试文件请勿放到 src/pages 中，这会导致 vite 的 import.meta.globEage 加载测试文件从而编译失败
+  - 解决方案：1. 放到 __test__ 文件夹中；2. 测试文件以 .ts 结尾，而不是和 pages 一样的 .tsx 结尾
