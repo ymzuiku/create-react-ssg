@@ -1,6 +1,6 @@
 # create-react-ssg
 
-** 本工程仅仅是 [create-react-ssx](https://github.com/ymzuiku/create-react-ssx) 的精简
+本工程仅仅是 [create-react-ssx](https://github.com/ymzuiku/create-react-ssx) 的精简
 
 这是一个 React + Vite 的 SSG 工程
 
